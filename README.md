@@ -30,10 +30,17 @@ unzip awscliv2.zip
 echo "export PATH=\$PATH:/usr/local/bin" >> ~/.profile
 source ~/.profile
 
-# aws configure
+# Credentials Management
+## 1. aws user credentials
 aws configure
 ## Input your aws credentials (aws_access_key_id、aws_secret_access_key and region)
 ## region=ap-southeast-2
+
+## 2. aws role
+## create role and bonding policies to it
+## attach role to your running ec2
+
+## Above two methods to manage credentials, better to choose role instead of user credentials(security)
 
 ```
 
